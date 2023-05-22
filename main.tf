@@ -135,7 +135,7 @@ output_path = "${path.module}/python/fighterchose-python.zip"
 
 resource "aws_lambda_function" "terraform_lambda_func" {
   filename                       = "${path.module}/python/fighterchose-python.zip"
-  function_name                  = "Spacelift_Test_Lambda_Function"
+  function_name                  = "Choose_your_fighter_lambda"
   role                           = aws_iam_role.lambda_role.arn
   handler                        = "chooseyerfighter.lambda_handler"
   runtime                        = "python3.9"
@@ -178,4 +178,4 @@ resource "aws_db_instance" "db_instance" {
 }
 
 
-#
+
