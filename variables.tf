@@ -30,4 +30,4 @@ variable "db_pass" {
     description = "Password for database"
     type        = string
     sensitive   = true
-}
+} #
